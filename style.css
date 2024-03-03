@@ -1,0 +1,31 @@
+table,
+th,
+td {
+  border: 1px solid #000;
+}
+table {
+  border-collapse: collapse;
+}
+caption {
+  margin: 10px;
+  font-size: 45px;
+  font-weight: 1000;
+}
+th {
+  background-color: #ccc;
+}
+td {
+  padding: 5px;
+  text-align: center;
+}
+tr:hover {
+  background-color: #bbb;
+}
+
+.error {
+  color: #f00;
+}
+
+.correct {
+  color: #037703;
+}
