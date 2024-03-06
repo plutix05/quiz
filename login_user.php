@@ -69,7 +69,7 @@ if (isset($_POST['login'])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Egzamin INF.02 - zaloguj się do swojego konta</title>
+    <title>Egzamin - zaloguj się do swojego konta</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -96,6 +96,7 @@ if (isset($_POST['login'])) {
             }
             ?>
         </form>
+        <p>Nie masz konta? <a href="signup.php">Zarejestruj się!</a></p>
     </section>
 </body>
 

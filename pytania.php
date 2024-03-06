@@ -25,7 +25,10 @@ if (!isset($_SESSION['zalogowany'])) {
         <a href="logout.php">Wyloguj się</a>
     </nav>
     <section>
-        <a href="add.php">Dodaj pytanie</a></li>
+        <p>
+        <h3><a href="add.php">Dodaj pytanie</a></li>
+        </h3>
+        </p>
         <table>
             <caption>
                 Lista pytań

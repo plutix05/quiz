@@ -96,7 +96,7 @@ if (isset($_POST['nick'])) {
             if ($wszystko_OK == true) {
                 if ($polaczenie->query("insert into user values (null, '$nick','$haslo_hash')")) {
                     $_SESSION['udanarejestracja'] = true;
-                    header('Location: login.php');
+                    header('Location: register.php');
                 } else {
                     throw new Exception($polaczenie->error);
                 }

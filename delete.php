@@ -31,10 +31,12 @@ try {
     if (isset($_POST['tak'])) {
       $sql2 = "DELETE FROM `pytania` WHERE id_pyt = $id_pyt";
       $q2 = $conn->query($sql2);
-      $_SESSION['deleted'];
+      $_SESSION['deleted'] = true;
       header("Location: deleted.php");
     } elseif (isset($_POST['nie'])) {
       header("Location: pytania.php");
+    } else {
+      throw new Exception($conn->error);
     }
   }
 } catch (Exception $e) {
